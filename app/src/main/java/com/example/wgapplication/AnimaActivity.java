@@ -3,17 +3,25 @@ package com.example.wgapplication;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.view.ViewGroup;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.Button;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
+
+import com.example.CommonUtils;
+import com.example.DensityUtil;
 
 public class AnimaActivity extends AppCompatActivity {
 
     private ImageView bigIv;
     private ImageView smallIv;
 
+    private static final String TAG = "AnimaActivityAnimaActivity";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +37,19 @@ public class AnimaActivity extends AppCompatActivity {
         button.setOnClickListener(v -> {
             startAnima();
         });
+        ImageView ivControl = findViewById(R.id.ivControl);
+        findViewById(R.id.btnControl).setOnClickListener(view -> {
+            ConstraintLayout.LayoutParams layoutParams = (ConstraintLayout.LayoutParams) ivControl.getLayoutParams();
+            layoutParams.width = 50;
+            layoutParams.height = 50;
+
+            ivControl.setX(960);
+            ivControl.setY(325);
+            ivControl.setLayoutParams(layoutParams);
+        });
+        float scaleXRatio = (float)DensityUtil.dp2px(126)/(float)CommonUtils.getScreenWidth(this);
+        float scaleYRatio = (float)DensityUtil.dp2px(204)/(float)CommonUtils.getScreenHeight(this);
+        Log.i(TAG,"onCreate: scaleXRatio  "+ scaleXRatio + " scaleYRatio "+ scaleYRatio);
     }
 
     public void startAnima() {
