@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WgApplication">
         <activity
-            android:name=".ToastTestActivity"
+            android:name=".SqliteActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
