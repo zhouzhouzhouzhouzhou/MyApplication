@@ -3,8 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/bg_toast_layout.xml" value="0.259" />
+        <entry key="app/src/main/res/drawable/ic_arrow_right_gray_16.xml" value="0.272" />
         <entry key="app/src/main/res/layout/activity_anima.xml" value="0.16145833333333334" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.36822916666666666" />
+        <entry key="app/src/main/res/layout/layout_test_toast)2.xml" value="0.20520833333333333" />
+        <entry key="app/src/main/res/layout/layout_test_toast.xml" value="0.33125" />
+        <entry key="app/src/main/res/layout/layout_toast_hint.xml" value="0.33229166666666665" />
       </map>
     </option>
   </component>

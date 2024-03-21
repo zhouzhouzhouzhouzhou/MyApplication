@@ -1,0 +1,7 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="ToastAnimation" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/action_toast_in</item>
+        <item name="android:windowExitAnimation">@anim/action_toast_out</item>
+    </style>
+
+</resources>
